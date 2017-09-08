@@ -4,6 +4,7 @@ import VueResource from 'vue-resource'
 
 import MainTemplate from './components/MainTemplate.vue'
 import Home from './components/Home.vue'
+import Limpieza from './components/Limpieza.vue'
 
 Vue.use(VueResource)
 Vue.use(VueRouter)
@@ -15,7 +16,10 @@ export var router = new VueRouter()
 router.map({
 	'/': {
 		component: Home
-	}
+	},
+  '/limpieza': {
+    component: Limpieza
+  }
 })
 
 // register a filter
@@ -25,7 +29,7 @@ Vue.filter('authorIdToName', function (id, authors) {
 
 	if(author.hasOwnProperty('name'))
 		return author.name
-	else 
+	else
 		return ''
 })
 

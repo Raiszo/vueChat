@@ -1,16 +1,20 @@
 
 <template>
-	<div class='jumbotron'>
-		<h1>Sequelize bookmarks</h1>
-
+	<div class='holapes'>
+		<h1>
+    {{ msg }}
+    </h1>
 	</div>
 </template>
 
 
 <script>
 export default {
+  name: 'holapes',
 	data(){
-		return {}
+		return {
+      msg: 'Welcome bitches'
+    }
 	},
 	methods: {
 

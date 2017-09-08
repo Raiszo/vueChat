@@ -78,6 +78,10 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
+	var _Limpieza = __webpack_require__(13);
+
+	var _Limpieza2 = _interopRequireDefault(_Limpieza);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_vue2.default.use(_vueResource2.default);
@@ -90,6 +94,9 @@
 	router.map({
 		'/': {
 			component: _Home2.default
+		},
+		'/limpieza': {
+			component: _Limpieza2.default
 		}
 	});
 
@@ -14859,7 +14866,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-28185ccc/MainTemplate.vue"
+	  var id = "_v-70226ec0/MainTemplate.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -14941,7 +14948,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-28e7a150/Home.vue"
+	  var id = "_v-0eb4a1a8/Home.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -14953,19 +14960,88 @@
 /* 11 */
 /***/ (function(module, exports) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 	//
 	// <template>
-	// 	<div class='jumbotron'>
-	// 		<h1>Sequelize bookmarks</h1>
-	//
+	// 	<div class='holapes'>
+	// 		<h1>
+	//     {{ msg }}
+	//     </h1>
 	// 	</div>
 	// </template>
 	//
+	//
+	// <script>
+	exports.default = {
+		name: 'holapes',
+		data: function data() {
+			return {
+				msg: 'Welcome bitches'
+			};
+		},
+
+		methods: {}
+		// </script>
+
+	};
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+	module.exports = "\n\n\t<div class='holapes'>\n\t\t<h1>\n    {{ msg }}\n    </h1>\n\t</div>\n";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
+	__vue_script__ = __webpack_require__(14)
+	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
+	  console.warn("[vue-loader] public/components/Limpieza.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(15)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
+	if (__vue_template__) {
+	__vue_options__.template = __vue_template__
+	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "_v-38ff5af0/Limpieza.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	// <template>
+	// 	<div class='jumbotron'>
+	// 		<h1>Sequelize bookmarks :D :D</h1>
+	// 	</div>
+	// </template>
 	//
 	// <script>
 	exports.default = {
@@ -14979,10 +15055,10 @@
 	};
 
 /***/ }),
-/* 12 */
+/* 15 */
 /***/ (function(module, exports) {
 
-	module.exports = "\n\n<div class='jumbotron'>\n\t<h1>Sequelize bookmarks</h1>\n\n</div>\n";
+	module.exports = "\n<div class='jumbotron'>\n\t<h1>Sequelize bookmarks :D :D</h1>\n</div>\n";
 
 /***/ })
 /******/ ]);
